@@ -1,3 +1,12 @@
+:root {
+    --primary-color: #FF6C00; 
+    --secondary-color: #191c26;
+
+    --text-ptimary: #303030;
+    --text-secondary: #9da4bd;
+}
+
 body {
+    font-family: 'Open Sans', 'Raleway', sans-serif;
     background: cornflowerblue;
 }
