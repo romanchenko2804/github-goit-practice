@@ -10,3 +10,14 @@ body {
     font-family: 'Open Sans', 'Raleway', sans-serif;
     background: cornflowerblue;
 }
+
+h2.section-title {
+    font-family: 'Raleway';
+    font-weight: bold;
+    font-size: 42px;
+    color: var(--text-ptimary);
+}
+
+h2.section-title.lighten {
+    color: #fff;
+}
