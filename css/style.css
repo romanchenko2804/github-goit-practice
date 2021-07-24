@@ -4,20 +4,298 @@
 
     --text-ptimary: #303030;
     --text-secondary: #9da4bd;
+    --text-primary-lighten: #555;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 body {
+    margin: 0;
+
     font-family: 'Open Sans', 'Raleway', sans-serif;
-    background: cornflowerblue;
+
+    background: rgb(230, 238, 116);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.suptitle-primary,
+.suptitle-secondary {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+
+    color: var(--text-ptimary);
+}
+
+.suptitle-secondary {
+    color: #9da4bd99;
 }
 
 h2.section-title {
     font-family: 'Raleway';
     font-weight: bold;
     font-size: 42px;
+
     color: var(--text-ptimary);
 }
 
 h2.section-title.lighten {
     color: #fff;
 }
+
+.hero-description {
+    color: var(--text-secondary);
+    font-size: 18px;
+    line-height: 30px;
+
+    color: #fff;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 100%;
+}
+
+    /* navbar */
+
+nav.navbar {
+    position: fixed;
+    top: 0;
+
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    width: 100%;
+    padding: 30px 55px 0;
+    box-sizing: border-box;
+
+    outline: 1px solid navy;   
+}
+
+.logo-img {
+    width: 68px;
+    height: 56px;
+    margin: 0 32px;
+}
+
+.nav-holder {
+    display: flex;
+    align-items: center;
+    height: 56px;
+}
+
+.btn-box {
+   display: flex;
+   align-items: center;  
+}
+
+.nav-links {
+    display: flex;  
+
+    background-color: skyblue;
+}
+
+.nav-links li {
+    margin: 0 40px;
+}
+
+a.nav-link {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+
+    color: #fff;
+}
+
+a.nav-link:hover,
+a.nav-link:focus,
+.social-link:hover,
+.social-link:focus {
+    color: var(--primary-color);
+}
+
+.phone-link {
+    margin-right: 40px;
+}
+
+p .section-description {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+
+    color: var(--text-primary-lighten);
+}
+
+.social-link {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+
+    color: var(--text-ptimary);
+}
+
+.primary-btn {
+    display: block;
+    padding: 12px 20px;
+    box-sizing: border-box;
+
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.09em;
+    
+    border: 1px solid var(--primary-color);
+    border-radius: 25px;
+   
+    color: #fff;
+
+    text-transform: uppercase;
+}
+
+.primary-btn.darken {
+    display: inline-block;
+
+    color: var(--text-ptimary);
+}
+
+/* aside */
+
+.sidebar {
+    width: 155px;
+    height: 100vh;
+    background-color: #fff;
+}
+
+.slider {
+    width: calc(100% - 155px);
+    background-image: url(../images/Slider3.jpg);
+}
+
+
+/* main styles here */
+
+.section-box {
+    padding: 130px 55px;
+}
+
+.about-section,
+.why-us-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about_image-box {
+    display: flex;
+    justify-content: space-between;
+    width: 48%;
+}
+
+.about_image-box img {
+    width: 48%;
+}
+
+.description-container {
+    width: 48%;
+}
+
+
+/* Price styles */
+
+.price-list {
+    display: flex;
+    
+}
+
+.price-item {
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+
+    color: var(--text-secondary);
+}
+
+/* why us styles here */
+
+.number-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 48%;
+    padding: 0 100px;
+}
+
+.number-box {
+    min-width: 170px;
+    width: 48%;
+    height: 133px;
+    margin-top: 30px;
+
+    background-color: #f7f7f7;
+}
+
+.number-box p,
+.number-box span {
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 57px;
+    text-align: center;
+
+    color: var(--text-ptimary);
+}
+
+.number-box span {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: center;
+
+    color: var(--text-ptimary);
+}
+
+/* Masters cards */
+
+.masters-list {
+  display: flex;  
+  justify-content: space-between;
+  flex-basis: 300px;
+}
+
+.master-card p {
+    font-size: 18px;
+    line-height: 25px;
+
+    color: var(--text-ptimary);~
+}
+
+.master-card span {
+    font-size: 14px;
+    line-height: 19px;
+
+    color: var(--primary-color);
+}
+
+.footer-contacts {
+    font-size: 18px;
+    line-height: 30px;
+
+    color: var(--text-secondary);
+}
+
+
