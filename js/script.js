@@ -102,15 +102,126 @@
 // getGrade (40, 60, 90)
 // // console.log(gtGrade (40, 60, 90));
 
-function lovefunc(flower1, flower2){
-  // moment of truth
-  let love = false;
-  if ((flower1 + flower2) % 2 !== 0) {
-    love = true;
-  }
-  return love;
+// function lovefunc(flower1, flower2){
+//   // moment of truth
+//   let love = false;
+//   if ((flower1 + flower2) % 2 !== 0) {
+//     love = true;
+//   }
+//   return love;
+// }
+
+// console.log(lovefunc(3, 2))
+
+// // console.log(typeof(true))
+
+// function removeChar(str){
+//   //You got this!
+//    let arr = str.split('');
+//   //  console.log(arr);
+//    let lastIndex = arr.length-2;
+//   //  console.log(lastIndex);
+//    let newArr = arr.splice(1, lastIndex).join('');
+//    console.log(newArr);
+
+//  };
+ 
+//  removeChar('Mykola');
+
+
+// function digitize(n) {
+//   //code here
+//   const array = n.toString().split("").reverse();
+//   const numbers = array.map((num) => Number(num));
+//   console.log(numbers);
+//   return numbers;
+// }
+
+// digitize(123456789);
+
+// *********?????????
+
+function toCamelCase(str){
+    const arr=str.split(/[-_]/)
+    .map((word, index) => {
+        if (index === 0) {
+            return word.charAt(0).toLowerCase() + word.slice(1);
+        }
+        return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
+    })
+    .join('')
+    console.log(arr)
 }
 
-console.log(lovefunc(3, 2))
+console.log(toCamelCase('the-stealth-warrior'));
 
-// console.log(typeof(true))
+// // Examples
+// // "the-stealth-warrior" gets converted to "theStealthWarrior"
+
+// // "The_Stealth_Warrior" gets converted to "TheStealthWarrior"
+
+// // "The_Stealth-Warrior" gets converted to "TheStealthWarrior"
+
+// *****************
+
+// function boolToWord( bool ){
+//     if (bool) {
+//         return "Yes"
+//     } else if (!bool) {
+//         return "No"
+//     }
+//   }
+
+//   console.log(boolToWord(false));
+
+// *****************
+
+// function powersOfTwo(n){
+//     const array = [];
+
+//     for (let i = 0; i <= n; i += 1) {
+        
+//         array.push(Math.pow(2, i));
+//     }
+        
+//     return array;
+//   }
+
+//   console.log(powersOfTwo(2));
+
+// *****************
+
+
+// function howMuchILoveYou(nbPetals) {
+//     let phrase = '';
+//     const array = [
+//         "empty",
+//         "I love you",
+//         "a little",
+//         "a lot",
+//         "passionately",
+//         "madly",
+//         "not at all"];
+
+//             if (nbPetals >= 7) {
+//                 return phrase = array[nbPetals%6];
+//             }
+            
+//             return  phrase = array[nbPetals];
+// }
+
+// console.log(howMuchILoveYou(103));
+
+// *****************
+
+// function grow(x){
+//     let multy = 1;
+//     for (const numb of x) {
+//         multy *= numb;
+//     }
+//     return multy;
+// }
+
+// console.log(grow([1,2,3,4]))
+
+// *****************
