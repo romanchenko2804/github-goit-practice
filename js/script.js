@@ -141,19 +141,19 @@
 
 // *********?????????
 
-function toCamelCase(str){
-    const arr=str.split(/[-_]/)
-    .map((word, index) => {
-        if (index === 0) {
-            return word.charAt(0).toLowerCase() + word.slice(1);
-        }
-        return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
-    })
-    .join('')
-    console.log(arr)
-}
+// function toCamelCase(str){
+//     const arr=str.split(/[-_]/)
+//     .map((word, index) => {
+//         if (index === 0) {
+//             return word.charAt(0).toLowerCase() + word.slice(1);
+//         }
+//         return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
+//     })
+//     .join('')
+//     console.log(arr)
+// }
 
-console.log(toCamelCase('the-stealth-warrior'));
+// console.log(toCamelCase('the-stealth-warrior'));
 
 // // Examples
 // // "the-stealth-warrior" gets converted to "theStealthWarrior"
